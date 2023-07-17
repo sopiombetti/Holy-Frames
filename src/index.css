@@ -1,0 +1,228 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(33, 29, 66);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+.navLinks{
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+.navLinks h3{
+  color: rgb(255, 254, 255);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navLinks h3:hover{
+  color: rgba(231, 224, 248, 0.721);
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(33, 29, 66);
+  position: fixed;
+  bottom: 0;
+  color: white;
+}
+
+.footer h4{
+  font-size: 18px;
+}
+
+.home{
+  margin-top: 65px;
+  padding-top: 40px;
+  background-color: rgb(223, 217, 250);
+  height: 600px;
+}
+
+.title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title img{
+  border-radius: 30px;
+}
+
+h1{
+  width: 50vw;
+  font-size: 60px;
+  color: rgb(27, 7, 56);
+  text-shadow: 8px 5px 6px rgb(150, 141, 241);
+  letter-spacing: 1.5px;
+}
+
+.products{
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.design-section1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.design-section1 h2{
+  font-size: 40px;
+  background-color: rgb(230, 222, 247);
+  color:  rgb(29, 29, 59);
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(29, 29, 59);
+}
+
+.sub-section1{
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  padding-top: 30px;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 170px;
+  border: 0.8px solid black;
+  border-radius: 10px;
+  padding: 9px;
+  font-weight: 700;
+}
+
+.card-grid{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  width: 90vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.design-section2{
+  background-color: rgba(96, 89, 171, 0.833);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+ 
+.design-section2 h2{
+  margin-left: 30px;
+  margin-bottom: 40px;
+  font-size: 35px;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(96, 89, 171, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.card button{
+  background-color: rgb(16, 7, 47);
+  border-radius: 7px;
+  margin-top: 20px;
+  width: 140px;
+  height: 40px;
+  color: white;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-color: rgba(40, 15, 87, 0.789)
+}
+
+.cartButton{
+  font-size: 15px;
+}
+
+.cart{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: rgb(223, 217, 250);
+}
+
+.cart h2{
+  margin-left: 30px;
+  margin-bottom: 40px;
+  font-size: 35px;
+  color: rgb(34, 12, 77);
+}
+
+.design-section3{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-section3 h3{
+  font-size: 30px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  grid-gap: 15px;
+}
+
+.form button{
+  width: 70px;
+  height: 30px;
+  background-color: rgb(16, 7, 47);
+  border-radius: 7px;
+  color: white;
+  margin-top: 20px;
+}
+
+.form button:hover{
+  cursor: pointer;
+  background-color: rgba(40, 15, 87, 0.789)
+}
+
+.design-section3 h4{
+  color: rgb(32, 32, 140)
+}
+
+.recom{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.divcarousel{
+  width: 60vw;
+  margin-left: 20vw;
+  padding-top: 30px;
+}
