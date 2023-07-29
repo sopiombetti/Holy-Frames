@@ -21,7 +21,7 @@ const Card = ({movie, origin}) => {
   
   return (
     <div className='card'>
-        <img width='550px' src={movie.img}/>
+        <img src={movie.img}/>
         <button className='cartButton' onClick={addCart}>{origin ? 'Eliminar del carrito' : 'Agregar al carrito'}</button>
     </div>
   )

@@ -18,9 +18,8 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path={routes.home} element={<Home/>}/>
+        <Route path={routes.home} element={<Products/>}/>
         <Route path={routes.carrito} element={<Carrito/>}/>
-        <Route path={routes.products} element={<Products/>}/>
         <Route path={routes.recomendations} element={<Recomendations/>}/>
       </Routes>
       <Footer/>

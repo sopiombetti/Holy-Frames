@@ -36,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+.navToggle{
+  display: none;
+}
+
 .footer{
   display: flex;
   justify-content: space-around;
@@ -53,10 +57,10 @@ a {
 }
 
 .home{
-  margin-top: 65px;
   padding-top: 40px;
   background-color: rgb(223, 217, 250);
-  height: 600px;
+  height: 500px;
+  margin-bottom: 50px;
 }
 
 .title{
@@ -67,6 +71,7 @@ a {
 
 .title img{
   border-radius: 30px;
+  width: 400px;
 }
 
 h1{
@@ -78,7 +83,7 @@ h1{
 }
 
 .products{
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 90px;
 }
 
@@ -86,7 +91,8 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .design-section1 h2{
@@ -146,6 +152,10 @@ h1{
   flex-direction: column;
   background-color: rgba(96, 89, 171, 0);
   border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.card img{
+  width: 550px;
 }
 
 .card button{
@@ -225,4 +235,110 @@ h1{
   width: 60vw;
   margin-left: 20vw;
   padding-top: 30px;
+}
+
+@media (max-width: 413px){ 
+  .navLinks{
+    background-color: rgb(33, 29, 66);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    height: 170px;
+    width: 100%;
+  }
+
+  .navLinks h3{
+    font-size: 15px;
+  }
+
+  .navLinks.open{
+    transform: translateX(0);
+  }
+
+  .navbar{
+    justify-content: end;
+    width: 100vw;
+    height: 40px;
+  }
+
+  .navToggle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    position: absolute;
+  }
+
+  .navToggle img{
+    width: 40px;
+    height: 30px;
+  }
+
+  .products{
+    width: 100vw;
+    padding-top: 40px;
+  }
+
+  .title{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title img{
+    width: 200px;
+  }
+
+  h1 {
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .design-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .design-section1 h2{
+    font-size: 20px;
+  }
+
+  .sub-section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .detail{
+    width: 200px;
+    height: 170px;
+    padding: 8px;
+    font-weight: 600;
+  }
+
+  .design-section2 h2{
+    font-size: 20px;
+  }
+
+  .card img{
+    width: 350px;
+  }
+
+  .card button{
+    width: 90px;
+    height: 25px;
+  }
+
+  .cartButton{
+    font-size: 8px;
+  }
+
+  .design-section3 h3{
+    font-size: 23px;
+  }
+
+  .footer h4{
+    font-size: 14px;
+  }
 }

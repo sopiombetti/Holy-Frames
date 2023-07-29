@@ -5,11 +5,11 @@ import Card from '../Components/Card'
 const Products = () => {
 
   const movieList = [
-    {id: 1, title: 'Dune', img: "/images/dune.png"},
-    {id: 2, title: '1917', img: "/images/1917.png"},
+    {id: 1, title: 'Blonde', img: "/images/blonde.jpeg"},
+    {id: 2, title: 'The Batman', img: "/images/thebatman.jpeg"},
     {id: 3, title: 'Birdman', img: "/images/birdman.png"},
     {id: 4, title: 'Django Unchained', img: "/images/django.png"},
-    {id: 5, title: 'La Dolce Vita', img: "/images/ladolcevita.png"},
+    {id: 5, title: 'The French Dispatch', img: "/images/thefrenchdispatch.jpeg"},
     {id: 6, title: 'Mad Max: Fury Road', img: "/images/madmax.png"},
     {id: 7, title: 'Nightmare Before Christmas', img: "/images/nightmareb4xmas.png"},
     {id: 8, title: 'Spider-man: Into the Spider-verse', img: "/images/spiderman.png"}
@@ -34,6 +34,12 @@ const Products = () => {
 
   return (
     <div className='products'>
+      <div className='home'>
+        <div className='title'>
+          <img src='/logo.jpeg' alt=''/>
+          <h1>Elegimos fotogramas icónicos de películas y los convertimos en posters</h1>
+        </div>
+      </div>
       <section className='design-section1'>
         <h2>¿Cómo son nuestros diseños?</h2>
         <div className='sub-section1'>
