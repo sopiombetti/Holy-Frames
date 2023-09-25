@@ -1,55 +1,43 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CarouselItem } from 'react-bootstrap';
 
 function Carousels() {
-  return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/daysofheaven.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>Days of Heaven (1978)</h3>
-          <p>dir Terrence Malick</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/goodtime.jpg"
-          alt="Second slide"
-        />
 
-        <Carousel.Caption>
-          <h3>Good Time (2017)</h3>
-          <p>dir Sadfie Brothers</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/naturalbornkillers.jpg"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h3>Natural Born Killers (1994)</h3>
-          <p>dir Oliver Stone</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/melancholia.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>Melancholia (2011)</h3>
-          <p>dir Lars Von Trier</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+  const movies = [{
+    img: "/images/daysofheaven.jpg",
+    title: "Days of Heaven (1978)",
+    dir: "dir Terrence Malick"
+  },
+  {
+    img: "/images/goodtime.jpg",
+    title: "Good Time (2017)",
+    dir: "dir Sadfie Brothers"
+  },
+  {
+    img: "/images/naturalbornkillers.jpg",
+    title: "Natural Born Killers (1994)",
+    dir: "dir Oliver Stone"
+  },
+  {
+    img: "/images/melancholia.jpg",
+    title: "Melancholia (2011)",
+    dir: "dir Lars Von Trier"
+  }]
+
+  return (
+    <Carousel infiniteLoop showThumbs>
+        {movies.map((movie) => (
+          <CarouselItem>
+              <div className='carousel-img'>
+                <img src={movie.img} />
+              </div>
+              <h3>{movie.title}</h3>
+              <p>{movie.dir}</p>
+          </CarouselItem>
+        ))}
     </Carousel>
+
   );
 }
 

@@ -237,6 +237,17 @@ h1{
   padding-top: 30px;
 }
 
+.carousel-img{
+  height: 430px;
+}
+
+.carousel-img img{
+  width: 100%;
+  height: 100%;
+  object-position: 50% 70%;
+  object-fit: cover;
+}
+
 @media (max-width: 413px){ 
   .navLinks{
     background-color: rgb(33, 29, 66);
