@@ -8,7 +8,7 @@ const Carrito = () => {
 
 
   return (
-    <div className='cart'>
+    <div className='py-8 bg-violet-200'>
       <div className='card-grid'>
         {state.map(film => <Card key={film.id} movie={film} origin={true}/>)}
       </div>

@@ -1,7 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gabarito', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -30,8 +29,6 @@ a {
   font-size: 18px;
 }
 
-
-
 .detail{
   display: flex;
   flex-direction: column;
@@ -53,109 +50,6 @@ a {
   margin: 0 auto;
 }
 
-.design-section2{
-  background-color: rgba(96, 89, 171, 0.833);
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
- 
-.design-section2 h2{
-  margin-left: 30px;
-  margin-bottom: 40px;
-  font-size: 35px;
-  color: white;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(96, 89, 171, 0);
-  border: 0px solid rgba(0, 0, 0, 0);
-}
-
-.card img{
-  width: 550px;
-}
-
-.card button{
-  background-color: rgb(16, 7, 47);
-  border-radius: 7px;
-  margin-top: 20px;
-  width: 140px;
-  height: 40px;
-  color: white;
-}
-
-.card button:hover {
-  cursor: pointer;
-  background-color: rgba(40, 15, 87, 0.789)
-}
-
-.cartButton{
-  font-size: 15px;
-}
-
-.cart{
-  padding-top: 100px;
-  padding-bottom: 50px;
-  background-color: rgb(223, 217, 250);
-}
-
-.cart h2{
-  margin-left: 30px;
-  margin-bottom: 40px;
-  font-size: 35px;
-  color: rgb(34, 12, 77);
-}
-
-.design-section3{
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.design-section3 h3{
-  font-size: 30px;
-}
-
-.form{
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  grid-gap: 15px;
-}
-
-.form button{
-  width: 70px;
-  height: 30px;
-  background-color: rgb(16, 7, 47);
-  border-radius: 7px;
-  color: white;
-  margin-top: 20px;
-}
-
-.form button:hover{
-  cursor: pointer;
-  background-color: rgba(40, 15, 87, 0.789)
-}
-
-.design-section3 h4{
-  color: rgb(32, 32, 140)
-}
-
-.recom{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.divcarousel{
-  width: 60vw;
-  margin-left: 20vw;
-  padding-top: 30px;
-}
-
 .carousel-img{
   height: 430px;
 }
@@ -168,78 +62,6 @@ a {
 }
 
 @media (max-width: 413px){ 
-  .navLinks{
-    background-color: rgb(33, 29, 66);
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    transform: translateX(-100%);
-    transition: 0.3s ease all;
-    height: 170px;
-    width: 100%;
-  }
-
-  .navLinks h3{
-    font-size: 15px;
-  }
-
-  .navLinks.open{
-    transform: translateX(0);
-  }
-
-  .navbar{
-    justify-content: end;
-    width: 100vw;
-    height: 40px;
-  }
-
-  .navToggle{
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    position: absolute;
-  }
-
-  .navToggle img{
-    width: 40px;
-    height: 30px;
-  }
-
-  .products{
-    width: 100vw;
-    padding-top: 40px;
-  }
-
-  .title{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title img{
-    width: 200px;
-  }
-
-  h1 {
-    width: 90%;
-    font-size: 30px;
-  }
-
-  .design-section1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .design-section1 h2{
-    font-size: 20px;
-  }
-
-  .sub-section1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .detail{
     width: 200px;
     height: 170px;
@@ -247,28 +69,4 @@ a {
     font-weight: 600;
   }
 
-  .design-section2 h2{
-    font-size: 20px;
-  }
-
-  .card img{
-    width: 350px;
-  }
-
-  .card button{
-    width: 90px;
-    height: 25px;
-  }
-
-  .cartButton{
-    font-size: 8px;
-  }
-
-  .design-section3 h3{
-    font-size: 23px;
-  }
-
-  .footer h4{
-    font-size: 14px;
-  }
 }

@@ -66,6 +66,7 @@ const theme = {
     fontFamily: {
       sans: ['Quicksand', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      gabarito: ['Gabarito', 'Quicksand']
     },
     extend: {
       spacing: {

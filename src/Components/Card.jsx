@@ -7,22 +7,20 @@ const Card = ({movie, origin}) => {
   
   const addCart = () => {
    
-    if(origin){
+    if(state.find((movFav) => movFav.id == movie.id)){
       dispatch({type: "REMOVE", payload: state.filter((mov) => mov.id != movie.id)})
-    }
-    else if(state.find((movCart) => movCart.id == movie.id)){
-      document.querySelector('.cartButton').disabled = true;
-      alert("Este poster ya fue agregado previamente al carrito")
     }
     else{
       dispatch({type: "ADD", payload: movie})
+      alert('Poster agregado al carrito')
     }
+
   }
   
   return (
-    <div className='card'>
-        <img src={movie.img}/>
-        <button className='cartButton' onClick={addCart}>{origin ? 'Eliminar del carrito' : 'Agregar al carrito'}</button>
+    <div className='flex flex-col '>
+        <img className='w-[550px]' src={movie.img}/>
+        <button className='text-sm bg-cyan-900 border w-[140px] p-1 mt-3 rounded-md text-white hover:cursor-pointer hover:bg-cyan-800 md:text-base md:w-[150px]' onClick={addCart}>{origin ? 'Eliminar del carrito' : 'Agregar al carrito'}</button>
     </div>
   )
 }

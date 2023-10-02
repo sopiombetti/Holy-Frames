@@ -28,8 +28,8 @@ export default function Navbar() {
       <nav className="flex items-center justify-between py-2.5 px-4 lg:px-16 md:px-8" aria-label="Global">
         <div className="flex lg:grow">
           <a href="/" className="-m-1.5 p-1.5 flex-column items-start">
-            <div className='flex gap-1 items-center'>
-              <span className='text-color-text-white text-sm pl-8 italic'>Holy <br/>Frames</span>
+            <div className='flex justify-center gap-1 items-center '>
+              <span className='text-color-text-white border-white border-2 rounded-md p-2 text-sm pl-8 italic'>Holy <br/>Frames</span>
             </div>
           </a>
         </div>

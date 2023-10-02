@@ -62,24 +62,24 @@ const Home = () => {
         </div>
       </section>
       <section className='flex flex-col items-center bg-indigo-300 py-5'>
-        <h2 className='mb-5 font-semibold'>¡Elegí los posters que más te gusten!</h2>
+        <h2 className='mb-5 text-center font-semibold'>¡Elegí los posters que más te gusten!</h2>
         <div className='card-grid'>
           {movieList.map(movie => <Card movie={movie} key={movie.id}/>)}
         </div>
       </section>
-      <section className='design-section3'>
-        <h3>¿Te gustaría ver opciones de otras películas?</h3>
-        <h3>¡Escribinos!</h3>
-        <form onSubmit={handleSubmit} className='form'>
+      <section className='flex flex-col justify-center items-center pt-5 px-3'>
+        <h3 className='text-xl text-center'>¿Te gustaría ver opciones de otras películas?</h3>
+        <h3 className='text-xl'>¡Escribinos!</h3>
+        <form onSubmit={handleSubmit} className='flex flex-col mt-5 space-y-4'>
           <label for='name'>Tu nombre y apellido:</label>
-          <input type='text' name='name' onChange={(e) => setName(e.target.value)}/>
+          <input type='text' name='name' onChange={(e) => setName(e.target.value)} className='border-1 border-cyan-900 rounded-md'/>
           <label for='email'>Tu mail:</label>
-          <input type='email' name='email' onChange={(e) => setEmail(e.target.value)}/>
+          <input type='email' name='email' onChange={(e) => setEmail(e.target.value)} className='border-1 border-cyan-900 rounded-md'/>
           <label for='comment'>Contanos de qué películas te gustaría ver posters:</label>
-          <textarea name='comment'/>
-          <button type='submit'>Enviar</button>
+          <textarea name='comment' className='border-1 border-cyan-900 rounded-md'/>
+          <button type='submit' className='bg-cyan-900 rounded-md p-1.5 w-[90px] text-white hover:cursor-pointer hover:bg-cyan-800'>Enviar</button>
         </form>
-        <h4>{message}</h4>
+        <h4 className='text-base my-3 text-red-600'>{message}</h4>
       </section>
     </div>
   )
