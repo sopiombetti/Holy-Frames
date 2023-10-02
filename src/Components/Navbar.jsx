@@ -45,13 +45,13 @@ export default function Navbar() {
         </div>
         
           <div className="hidden lg:flex lg:grow lg:justify-end lg:gap-x-14 text-white ">
-            <Link to={"/"} className="text-sm text-white font-semibold leading-6 text-gray-900">
+            <Link to={"/"} className="text-base text-white font-semibold leading-6 text-gray-900">
               Inicio
             </Link>
-            <Link to={"/cart"} className="text-sm text-white font-semibold leading-6 text-gray-900 ">
+            <Link to={"/cart"} className="text-base text-white font-semibold leading-6 text-gray-900 ">
               Carrito
             </Link>
-            <Link to={"/recomendations"} className="text-sm text-white font-semibold leading-6 text-gray-900 ">
+            <Link to={"/recomendations"} className="text-base text-white font-semibold leading-6 text-gray-900 ">
               Recomendaciones
             </Link>
           </div>
