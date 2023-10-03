@@ -5,7 +5,7 @@ import theme from "./src/utils/tailwind/theme"
 // npx tailwindcss -i ./src/utils/tailwind/input.css -o ./dist/output.css --watch
 
 export default {
-  content: ["./dist/**/*.{html,js,jsx}"],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: theme,
   },
